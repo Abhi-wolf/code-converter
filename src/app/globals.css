@@ -7,6 +7,31 @@
   --foreground: #171717;
 }
 
+/* codeBlock */
+
+.codeBlock {
+  min-width: 45%;
+  margin: 0 0.08rem;
+}
+
+.ͼ1.cm-focused {
+  outline: none !important;
+}
+
+.ͼ3 .cm-content {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  width: 2rem;
+}
+
+.ͼ1 .cm-scroller {
+  overflow-x: hidden;
+}
+
+.cm-line {
+  white-space: pre-wrap;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
