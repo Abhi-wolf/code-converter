@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import CodeConverter from "./codeContext";
 import { Toaster } from "react-hot-toast";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,6 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          defer
+          data-domain="code-converter-kohl.vercel.app"
+          src="http://localhost:3000/tracking-script.js"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
       >
